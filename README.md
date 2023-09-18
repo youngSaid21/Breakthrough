@@ -111,7 +111,9 @@ Intelligence artificielle basique
 La dernière amélioration à apporter à votre jeu est la possibilité de jouer contre une intelligence artificielle basique. Cette IA sera une IA dite gloutonne : à chaque tour, elle avancera systématiquement le pion qui se situe le plus près de l’objectif (la ligne adverse). Si plusieurs pions sont situés à même distance, un pion sera choisi au hasard parmi ceux-ci.
 Pour jouer contre l’IA, le programme devra être appelé avec l’argument –ai placé après le chemin du fichier encodant le plateau de départ (board.txt dans l’exemple ci-dessous) :
 python3 partie2.py board.txt –ai
+
 Fonctions à implémenter
+
 — init_board(file_path: str ou None) -> List[List[int]] : Étant donné le chemin vers le fichier de configuration du plateau, adaptez cette fonction de sorte à ce qu’elle implémente le plateau décrit.
 — ai_select_peg(board: List[List[int]], player: int) -> tuple : Permet à une IA de jouer automatiquement, de manière gloutonne, en avançant toujours le pion qui se trouve le plus proche de l’objectif. Si plusieurs pions sont à même distance et sont jouables, l’un d’eux est sélectionné aléatoirement. Pour sélectionner un pion aléatoirement, utilisez la fonction choice() de la librairie random sur la liste des pions éligibles triée par ordre croissant de position. La fonction renvoie un tuple donnant la position source sous forme d’une paire d’indices de la matrice board.
 — ai_move(board: List[List[int]], pos: Tuple(int, int), player: int) -> tuple : Sélectionne aléatoirement une destination pour le pion choisi par l’IA. Pour sélectionner un mouvement aléatoirement, utilisez la fonction choice() de la librairie random sur la liste des mouvements possibles triée par ordre croissant de position. La fonction renvoie un tuple donnant la source et la destination du mouvement, sous forme de paires d’indices de la matrice board.
