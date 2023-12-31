@@ -12,7 +12,7 @@ L’objectif du projet est de réaliser une implémentation en Python 3 du jeu B
 • Les étapes de développement
 
 
-La réalisation du projet est découpée en trois parties, chacune s’étalant sur environ un mois.
+La réalisation du projet est découpée en trois parties.
 Voici un résumé de ce qui sera développé dans chacune de celles-ci :
 
 — Partie 1 : Implémentation du jeu avec affichage en terminal.
